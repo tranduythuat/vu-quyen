@@ -205,6 +205,7 @@ body {
     font-size: 35px;
     width: 100%;
     margin: 0;
+    line-height: 2;
 }
 
 .header-section .wrapper .image-col {
@@ -494,12 +495,18 @@ body {
     font-size: 12px;
     text-transform: uppercase;
 }
+.location .location-name.name {
+    position: relative;
+    top: -13px;
+}
 
 .location .location-name {
     font-family: "MTD Portrait Script Bounce", cursive;
     font-weight: 500;
     font-size: 3.2rem;
     color: var(--header);
+    width: 100%;
+    line-height: 2;
 }
 
 /* .location .box-icon {
@@ -629,6 +636,7 @@ body {
     color: var(--header);
     text-align: center;
     margin: 12% 0 5%;
+    width: 100%;
 }
 
 .rsvp .rsvp-text {
@@ -717,6 +725,28 @@ body {
 #rsvp-form .form-group input.input-text::placeholder {
     text-transform: uppercase;
 }
+
+#rsvp-form .form-group textarea {
+    font-family: "SVN-GothamBook", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+    line-height: 1.6;
+    background-color: #fff;
+    user-select: none;
+    margin-bottom: 5%;
+    padding: 2% 3%;
+    outline: none;
+}
+
+#rsvp-form .form-group textarea::placeholder {
+    text-transform: uppercase;
+}
+
 
 #rsvp-form .vegetarian {
     padding-top: 20px;
@@ -822,15 +852,17 @@ body {
 
 .end {
     width: 100%;
-    aspect-ratio: 543 / 200;
+    aspect-ratio: 543 / 300;
     /* background: url('../images/end.jpg') no-repeat center / cover; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 0 8%;
     position: relative;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .end p {
@@ -963,6 +995,7 @@ body {
     }
 
     #rsvp-form .form-group input.input-text,
+    #rsvp-form .form-group textarea,
     #rsvp-form .form-actions button {
         font-size: calc((12 / 543) * 100vw);
     }
