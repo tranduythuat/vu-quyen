@@ -226,7 +226,7 @@ body {
 
 .flip-tilt-bounce {
     box-shadow: 10px 10px 20px #4d4d4d79;
-    animation: floatUpDown 3s ease-in-out infinite;
+    animation: floatUpDown 4s ease-in-out infinite;
 }
 
 /* Định nghĩa animation */
@@ -264,7 +264,7 @@ body {
 .header-section .date-section img {
     position: absolute;
     left: -45%;
-    animation: floatUpDown2 3s ease-in-out infinite;
+    animation: floatUpDown2 4s ease-in-out infinite;
     width: 90px;
     height: auto;
 }
