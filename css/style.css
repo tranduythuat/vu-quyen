@@ -432,10 +432,10 @@ body {
     color: #904250ff;
 }
 .dresscode .color-grid {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
-    gap: 0%;
+    gap: 4%;
     padding-bottom: 10%;
 }
 .dresscode .color-grid .item {
@@ -445,7 +445,23 @@ body {
     position: relative;
 }
 
-.dresscode .color-grid .item:nth-child(1) {
+.dresscode .color-grid .group-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
+
+.dresscode .color-grid .group-item p {
+    text-transform: uppercase;
+    font-family: "SVN-GothamBook", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* .dresscode .color-grid .item:nth-child(1) {
     right: -20px;
 }
 .dresscode .color-grid .item:nth-child(2) {
@@ -456,7 +472,7 @@ body {
 }
 .dresscode .color-grid .item:nth-child(5) {
     left: -20px;
-}
+} */
 
 /* location ========================= > */
 .location {
@@ -921,6 +937,10 @@ body {
 
     .dresscode .color-grid .item {
         width: calc((40 / 543) * 100vw);
+    }
+
+    .dresscode .color-grid .group-item p {
+        font-size: calc((12 / 543) * 100vw);
     }
 
     /* photo-section  */
